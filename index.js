@@ -88,3 +88,21 @@ console.log(sortAscending([5, 4, 3, 2, 1]));
 
 
 /*Exercice 6*/
+
+function calculateAverage(numbers) {
+    let average = 0;
+	let sum = 0;
+
+	for( let number of numbers)
+	{
+		sum = sum + number;
+	}
+
+	average = sum / numbers.length;
+
+	return average;
+}
+
+console.log(calculateAverage([5, 3, 1, 4, 2]));
+console.log(calculateAverage([10, 20, 30, 40, 50]));
+console.log(calculateAverage([5, 4, 3, 2, 1]));
