@@ -25,3 +25,22 @@ displayArrayReverse([1, 2, 3, 4, 5]);
 displayArrayReverse([10, 20, 30, 40, 50]);
 displayArrayReverse([5, 4, 3, 2, 1]);
 displayArrayReverse([100, 200, 300, 400, 500]);
+
+
+/* Exercice 3 */
+
+function findLongestWord(words) {
+    let longest = ""; 
+
+    for (let k = 0; k < words.length; k++) {
+        if (words[k].length > longest.length) {
+            longest = words[k];
+        }
+    }
+
+    console.log("Le mot le plus long est :", longest);
+}
+
+findLongestWord(['hello', 'world', 'javascript', 'python', 'java']);
+findLongestWord(['apple', 'banana', 'cherry', 'date', 'elderberry']);
+findLongestWord(['cat', 'dog', 'elephant', 'fox']);
