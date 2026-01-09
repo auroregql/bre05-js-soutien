@@ -106,3 +106,38 @@ function calculateAverage(numbers) {
 console.log(calculateAverage([5, 3, 1, 4, 2]));
 console.log(calculateAverage([10, 20, 30, 40, 50]));
 console.log(calculateAverage([5, 4, 3, 2, 1]));
+
+/* Exercice 7 */
+
+function isPrime(number) {
+    if (number <= 1) {
+        return false;
+    }
+
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(isPrime(2));
+console.log(isPrime(3));
+console.log(isPrime(4));
+console.log(isPrime(5));
+console.log(isPrime(6));
+console.log(isPrime(7));
+console.log(isPrime(8));
+console.log(isPrime(9));
+console.log(isPrime(10));
+console.log(isPrime(11));
+console.log(isPrime(12));
+console.log(isPrime(13));
+console.log(isPrime(14));
+console.log(isPrime(15));
+console.log(isPrime(16));
+console.log(isPrime(17));
+console.log(isPrime(18));
+console.log(isPrime(19));
