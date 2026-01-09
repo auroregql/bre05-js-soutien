@@ -62,3 +62,29 @@ function removeDuplicates(array) {
 removeDuplicates([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]);
 removeDuplicates([10, 20, 30, 40, 50, 10, 20, 30, 40, 50]);
 removeDuplicates([5, 4, 3, 2, 1, 5, 4, 3, 2, 1]);
+
+/* Exercice 5 */
+
+function sortAscending(numbers) {
+    let result = numbers.slice(); 
+
+    for (let m = 0; m < result.length; m++) {
+        for (let n = 0; n < result.length - 1; n++) {
+            if (result[n] > result[n + 1]) {
+                
+                let temp = result[n];
+                result[n] = result[n + 1];
+                result[n + 1] = temp;
+            }
+        }
+    }
+
+    return result;
+}
+
+console.log(sortAscending([5, 3, 1, 4, 2]));
+console.log(sortAscending([10, 20, 30, 40, 50]));
+console.log(sortAscending([5, 4, 3, 2, 1]));
+
+
+/*Exercice 6*/
