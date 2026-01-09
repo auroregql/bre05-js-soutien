@@ -38,9 +38,27 @@ function findLongestWord(words) {
         }
     }
 
-    console.log("Le mot le plus long est :", longest);
+    console.log(longest);
 }
 
 findLongestWord(['hello', 'world', 'javascript', 'python', 'java']);
 findLongestWord(['apple', 'banana', 'cherry', 'date', 'elderberry']);
 findLongestWord(['cat', 'dog', 'elephant', 'fox']);
+
+
+/*Exercice 4*/
+
+function removeDuplicates(array) {
+    let result = [];
+    
+    for (let l = 0; l < array.length; l++) {
+     if (!result.includes(array[l])) {
+            result.push(array[l]);
+        }
+    }
+    console.log(result);
+}
+
+removeDuplicates([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]);
+removeDuplicates([10, 20, 30, 40, 50, 10, 20, 30, 40, 50]);
+removeDuplicates([5, 4, 3, 2, 1, 5, 4, 3, 2, 1]);
